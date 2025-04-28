@@ -1,0 +1,33 @@
+chegada:
+  min: 2.0
+  max: 4.0
+  fila_inicial: "1"
+
+filas:
+  "1":
+    servidores: 1
+    capacidade: 1
+    atendimento_min: 1.0
+    atendimento_max: 2.0
+    destinos:
+      "2": 0.8
+      "3": 0.2
+
+  "2":
+    servidores: 2
+    capacidade: 5
+    atendimento_min: 4.0
+    atendimento_max: 8.0
+    destinos:
+      "2": 0.5
+      "3": 0.3
+      "saida": 0.2
+
+  "3":
+    servidores: 2
+    capacidade: 10
+    atendimento_min: 5.0
+    atendimento_max: 15.0
+    destinos:
+      "3": 0.7
+      "saida": 0.3
